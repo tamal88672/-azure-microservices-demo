@@ -1,0 +1,17 @@
+version: '3.4'  # This specifies the version of Docker Compose.
+
+services:
+  productservice:  # The name of your first service.
+    build: ./ProductService  # Path to the Dockerfile for ProductService.
+    ports:
+      - "5001:80"  # Exposes port 80 inside the container to port 5001 on your local machine.
+
+  orderservice:  # The name of your second service.
+    build: ./OrderService  # Path to the Dockerfile for OrderService.
+    ports:
+      - "5002:80"  # Exposes port 80 inside the container to port 5002 on your local machine.
+
+  notificationservice:  # The name of your third service.
+    build: ./NotificationService  # Path to the Dockerfile for NotificationService.
+    ports:
+      - "5003:80"  # Exposes port 80 inside the container to port 5003 on your local machine.

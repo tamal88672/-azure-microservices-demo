@@ -1,0 +1,58 @@
+# Build and publish folders
+bin/
+obj/
+out/
+dist/
+build/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.*
+
+# Docker
+*.container
+*.dockerfile
+docker-compose.override.yml
+
+# Azure Pipelines
+azure-pipelines.yml
+*.azure-pipelines.yml
+
+# Lock files / temp
+*.lock
+*.pid
+*.seed
+*.tmp
+*.temp
+*.bak
+*.swp
+*.orig
+
+# Node (in case you use Angular or similar)
+node_modules/
+bower_components/
+jspm_packages/
+
+# Test / coverage
+coverage/
+TestResults/
